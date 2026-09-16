@@ -1,303 +1,258 @@
-<!DOCTYPE html>
-<html lang="es-PE">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rumbo — Sigue cada trayecto con tranquilidad</title>
-  <meta name="description"
-    content="Rumbo es la plataforma que centraliza el estado del transporte escolar en Lima y Callao: recojo, ruta, retrasos, llegada e incidencias, en tiempo real.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rumbo</title>
+  <meta name="description" content="Rumbo conecta a padres y conductores en tiempo real para monitorear trayectos escolares, recibir alertas y mantener una comunicación directa." />
+  <meta name="keywords" content="Rumbo, transporte escolar, monitoreo, padres, conductores, alertas, movilidad escolar" />
+  <meta name="author" content="AIpaca OS" />
+  <link rel="icon" href="./assets/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-  <header class="site-header">
-    <div class="container header-row">
-      <a href="#top" class="brand" aria-label="Rumbo — inicio">
-        <!-- Reemplaza este SVG por <img src="img/logo-rumbo.png" alt="Rumbo" class="brand-mark"> cuando tengas tu logo listo -->
-        <img src="img/rumbo-logo.jpg" alt="Rumbo" class="brand-mark">
-        <path d="M24 4C14.6 4 7 11.4 7 20.4C7 32 24 44 24 44C24 44 41 32 41 20.4C41 11.4 33.4 4 24 4Z"
-          fill="url(#g1)" />
-        <circle cx="20" cy="17" r="4" fill="#F3D9A4" />
-        <path d="M18 30C22 24 27 22 33 14" stroke="#0E2A28" stroke-width="2.4" stroke-linecap="round" opacity=".35" />
-        <defs>
-          <linearGradient id="g1" x1="7" y1="4" x2="41" y2="44" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#1B5A54" />
-            <stop offset="1" stop-color="#3EA98A" />
-          </linearGradient>
-        </defs>
-        </svg>
-        <span class="brand-word">Rumbo</span>
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Rumbo, volver al inicio">
+        <img src="./assets/logo.png" alt="Rumbo" />
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav"
-        aria-label="Abrir menú">
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="primary-nav" id="primaryNav">
-        <a href="#funcionamiento">Cómo funciona</a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="#beneficios">Beneficios</a>
-        <a href="#funcionalidades">Funcionalidades</a>
-        <a href="#contacto">Contacto</a>
-
-        <div class="nav-auth">
-          <a href="#" class="btn-text">Iniciar sesión</a>
-          <a href="#" class="btn btn-primary btn-sm">Registrarse</a>
+        <a href="#funciona">Funcionalidades</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" style="display: flex; align-items: center; gap: 8px;">Recursos
+            <img class="nav-dropdown-toggle" src="./assets/chevron.svg"></button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="#opiniones" role="menuitem">Opiniones</a>
+            <a href="#faq" role="menuitem">Preguntas frecuentes</a>
+          </div>
         </div>
       </nav>
+
+      <div class="nav-actions">
+        <a class="login-link" href="#">Iniciar sesión</a>
+        <a class="btn btn-primary btn-sm" href="#cta">Regístrate</a>
+      </div>
     </div>
   </header>
 
-  <main id="contenido">
-
-    <!-- HERO / Propuesta de valor -->
-    <section class="hero" id="top">
+  <main id="main">
+    <section class="hero section-cream">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Transporte escolar en Lima y Callao</p>
-          <h1>Sigue cada trayecto<br>con tranquilidad.</h1>
-          <p class="hero-lede">
-            Rumbo centraliza el recojo, la ruta, los retrasos y la llegada del transporte
-            escolar en un solo lugar. Los padres saben qué está pasando sin escribir a cada
-            rato, y los conductores lo registran en pocos pasos.
-          </p>
-          <div class="hero-actions">
-            <a href="#cta" class="btn btn-primary">Solicitar acceso</a>
-            <a href="#funcionamiento" class="btn btn-ghost">Ver cómo funciona</a>
-          </div>
+          <h1>Tranquilidad en<br />cada trayecto.</h1>
+          <p>Conecta a padres y conductores en tiempo real. Monitorea paradas, recibe alertas de incidencias y mantén comunicación directa durante todo el traslado escolar.</p>
+          <a class="btn btn-primary" href="#cta">Descargar para padres</a>
         </div>
-
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" class="route-illustration">
-            <path d="M60 340 C 140 250, 180 250, 230 300 S 340 380, 420 300 S 470 160, 440 90" stroke="#3EA98A"
-              stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="2 22" />
-            <circle cx="60" cy="340" r="9" fill="#12403D" />
-            <circle cx="440" cy="90" r="9" fill="#12403D" />
-            <g transform="translate(190,270)">
-              <rect x="0" y="10" width="66" height="34" rx="10" fill="#12403D" />
-              <rect x="8" y="18" width="20" height="14" rx="3" fill="#F3D9A4" />
-              <rect x="34" y="18" width="20" height="14" rx="3" fill="#F3D9A4" />
-              <circle cx="14" cy="46" r="6" fill="#0E2A28" />
-              <circle cx="52" cy="46" r="6" fill="#0E2A28" />
-            </g>
-            <g transform="translate(360,40)">
-              <rect x="0" y="30" width="60" height="46" fill="#F3D9A4" />
-              <polygon points="0,30 30,8 60,30" fill="#12403D" />
-              <rect x="24" y="52" width="12" height="24" fill="#12403D" />
-            </g>
-          </svg>
-
-          <div class="notif-card">
-            <div class="notif-icon">
-              <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4C14.6 4 7 11.4 7 20.4C7 32 24 44 24 44C24 44 41 32 41 20.4C41 11.4 33.4 4 24 4Z"
-                  fill="url(#g2)" />
-                <defs>
-                  <linearGradient id="g2" x1="7" y1="4" x2="41" y2="44" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#1B5A54" />
-                    <stop offset="1" stop-color="#3EA98A" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="notif-text">
-              <p class="notif-title">Valentina llegó al colegio <span class="notif-check">✓</span></p>
-              <p class="notif-sub">Trayecto completado con éxito.</p>
-            </div>
-          </div>
+        <div class="hero-art" aria-label="Padres y conductores reciben actualizaciones del trayecto escolar">
+          <img src="./assets/hero-visual.png" alt="Personas usando Rumbo con alertas de ubicación y tráfico" />
         </div>
       </div>
     </section>
 
-    <!-- Contexto / credibilidad con data -->
-    <section class="stats" aria-label="Contexto del transporte escolar en Lima y Callao">
-      <div class="container stats-grid">
-        <div class="stat">
-          <p class="stat-number">3 758</p>
-          <p class="stat-label">vehículos escolares habilitados por la ATU en Lima y Callao</p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">69,3&nbsp;%</p>
-          <p class="stat-label">de congestión promedio en Lima según TomTom Traffic Index 2025</p>
-        </div>
-        <div class="stat">
-          <p class="stat-number">90,3&nbsp;%</p>
-          <p class="stat-label">de la población limeña de 6 años a más ya usa Internet (INEI)</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Funcionamiento -->
-    <section class="section" id="funcionamiento">
+    <section class="benefits section-cream" id="beneficios">
       <div class="container">
-        <h2>Cómo funciona</h2>
-        <p class="section-lede">Un mismo trayecto, visible para toda la familia — desde que el vehículo sale hasta que
-          el estudiante llega.</p>
+        <header class="section-heading compact">
+          <h2><span class="marker">Beneficios</span> diseñados para tu total tranquilidad</h2>
+          <p>Reducimos la incertidumbre diaria de los trayectos escolares con herramientas de control inmediatas.</p>
+        </header>
 
-        <ol class="route-steps">
-          <li>
-            <span class="route-dot" aria-hidden="true"></span>
-            <div>
-              <h3>Recojo confirmado</h3>
-              <p>El conductor marca el recojo del estudiante y la familia recibe la confirmación al instante.</p>
+        <div class="card-grid card-grid-3">
+          <article class="feature-card">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-4.1 7-11a7 7 0 1 0-14 0c0 6.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
             </div>
-          </li>
-          <li>
-            <span class="route-dot" aria-hidden="true"></span>
-            <div>
-              <h3>Ruta en curso</h3>
-              <p>Un timeline muestra el avance del recorrido y avisa si hay retrasos por tráfico o desvíos.</p>
+            <h3>Monitoreo en Vivo</h3>
+            <p>Visualiza el recorrido exacto del vehículo de transporte escolar de tus hijos sobre el mapa interactivo en tiempo real.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/><path d="M10 21h4"/></svg>
             </div>
-          </li>
-          <li>
-            <span class="route-dot" aria-hidden="true"></span>
-            <div>
-              <h3>Incidencias, si ocurren</h3>
-              <p>Cualquier eventualidad se registra una sola vez y llega a quien necesita saberlo, sin mensajes
-                repetidos.</p>
+            <h3>Alertas Inmediatas</h3>
+            <p>Recibe notificaciones automáticas cuando el transporte esté cerca de casa, al llegar al colegio o ante incidencias.</p>
+          </article>
+          <article class="feature-card" id="funcionalidades">
+            <div class="icon-tile" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="13" rx="3"/><path d="m8 20 3-2h5"/></svg>
             </div>
-          </li>
-          <li>
-            <span class="route-dot" aria-hidden="true"></span>
-            <div>
-              <h3>Llegada confirmada</h3>
-              <p>Al llegar al colegio o al hogar, la entrega queda registrada y notificada.</p>
-            </div>
-          </li>
-        </ol>
+            <h3>Comunicación Directa</h3>
+            <p>Chat integrado entre conductores y padres sin compartir números privados. Centraliza todos los reportes.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Beneficios -->
-    <section class="section section-alt" id="beneficios">
+    <section class="steps section-cream" id="funciona">
       <div class="container">
-        <h2>Más cerca de lo que importa</h2>
-        <div class="benefits-grid">
-          <div class="benefit">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#12403D" stroke-width="1.8">
-              <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
-            </svg>
-            <h3>Trayectos más seguros</h3>
-            <p>Cada hito del recorrido queda registrado, con hora y estado.</p>
-          </div>
-          <div class="benefit">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#12403D" stroke-width="1.8">
-              <circle cx="9" cy="8" r="3" />
-              <circle cx="17" cy="9" r="2.4" />
-              <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.2c2.4.2 4.5 1.9 4.5 4.3" />
-            </svg>
-            <h3>Siempre sabes quién está a cargo</h3>
-            <p>El conductor y el vehículo asignados están visibles para cada familia.</p>
-          </div>
-          <div class="benefit">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#12403D" stroke-width="1.8">
-              <path
-                d="M12 21s-7-4.5-9.5-9C1 8 3 4 7 4c2 0 3.7 1.2 5 3 1.3-1.8 3-3 5-3 4 0 6 4 4.5 8-2.5 4.5-9.5 9-9.5 9z" />
-            </svg>
-            <h3>Acompaña cada etapa</h3>
-            <p>Desde el recojo hasta la entrega, sin depender de mensajes sueltos.</p>
-          </div>
-          <div class="benefit">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#12403D" stroke-width="1.8">
-              <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.5 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z" />
-            </svg>
-            <h3>Más tranquilidad para tu familia</h3>
-            <p>Menos incertidumbre, menos llamadas, información clara cuando la necesitas.</p>
-          </div>
+        <header class="section-heading">
+          <h2>¿Cómo funciona Rumbo?</h2>
+          <p>Comenzar a monitorear los trayectos escolares toma solo unos minutos.</p>
+        </header>
+
+        <div class="card-grid card-grid-4 step-grid">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <h3>Recojo confirmado</h3>
+            <p>El conductor marca el recojo del estudiante y la familia recibe la confirmación al instante.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <h3>Ruta en curso</h3>
+            <p>Un timeline muestra el avance del recorrido y avisa si hay retrasos por tráfico o desvíos.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <h3>Incidencias, si ocurren</h3>
+            <p>Cualquier eventualidad se registra una sola vez y llega a quien necesita saberlo.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-num">04</span>
+            <h3>Llegada confirmada</h3>
+            <p>Al llegar al colegio o al hogar, la entrega queda registrada y notificada.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Funcionalidades -->
-    <section class="section" id="funcionalidades">
+    <section class="metrics" aria-label="Indicadores de Rumbo">
+      <div class="container metrics-grid">
+        <div class="metric"><strong>120,000+</strong><span>Rutas completadas de forma segura</span></div>
+        <div class="metric"><strong>99.8%</strong><span>Uptime del servicio de GPS en vivo</span></div>
+        <div class="metric"><strong>15 min</strong><span>Ahorro promedio diario por ruta</span></div>
+        <div class="metric"><strong>150+</strong><span>Asociaciones de conductores formales</span></div>
+      </div>
+    </section>
+
+    <section class="testimonials section-cream" id="opiniones">
       <div class="container">
-        <h2>Funcionalidades</h2>
-        <p class="section-lede">Pensado para dos personas distintas: quien espera y quien conduce.</p>
+        <header class="section-heading">
+          <h2>Lo que opinan padres y conductores</h2>
+          <p>Rumbo es un puente digital que une a quienes buscan seguridad con quienes la brindan con esmero.</p>
+        </header>
 
-        <div class="features-cols">
-          <div class="features-col">
-            <h3>Para padres y tutores</h3>
-            <ul class="feature-list">
-              <li>Estado del traslado en tiempo real</li>
-              <li>Timeline con recojo, avance, retrasos y llegada</li>
-              <li>Confirmación de recojo y entrega</li>
-              <li>Notificaciones de incidencias</li>
-            </ul>
-          </div>
-          <div class="features-col">
-            <h3>Para conductores</h3>
-            <ul class="feature-list">
-              <li>Registro de hitos en pocos pasos</li>
-              <li>Reporte de retrasos e incidencias</li>
-              <li>Organización de la ruta y sus paradas</li>
-              <li>Menos mensajes individuales que responder</li>
-            </ul>
-          </div>
+        <div class="card-grid card-grid-3 testimonial-grid">
+          <article class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">”</div>
+            <p class="quote">“Con Rumbo se acabaron las llamadas de desesperación en el tráfico. Sé exactamente cuándo la movilidad pasará por Mateo. Es invaluable.”</p>
+            <div class="person">
+              <img src="./assets/avatar-parent.png" alt="" />
+              <div><strong>Gabriela Mendoza</strong><span>Madre de Familia</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">”</div>
+            <p class="quote">“Los padres aprecian la transparencia. La app me permite registrar eventos en un tap y continuar manejando seguro.”</p>
+            <div class="person">
+              <img src="./assets/avatar-driver.png" alt="" />
+              <div><strong>Carlos Estrada</strong><span>Conductor Asociado (Ruta 4)</span></div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="quote-mark" aria-hidden="true">”</div>
+            <p class="quote">“Implementamos Rumbo en toda nuestra flota de movilidad. Redujimos un 40% las consultas de incidencias en recepción.”</p>
+            <div class="person">
+              <img src="./assets/avatar-school.png" alt="" />
+              <div><strong>Director de Operaciones</strong><span>Colegio San Ignacio</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section" id="cta">
-      <div class="container cta-inner">
-        <h2>Un Perú que cuida, avanza.</h2>
-        <p>Si administras rutas de transporte escolar en Lima o Callao, súmate a la primera versión de Rumbo.</p>
-        <a href="#contacto" class="btn btn-primary btn-lg">Solicitar acceso</a>
-      </div>
-    </section>
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <header class="section-heading">
+          <h2>Preguntas Frecuentes</h2>
+          <p>¿Tienes dudas sobre la seguridad o el funcionamiento técnico? Aquí las aclaramos.</p>
+        </header>
 
-    <!-- Contacto -->
-    <section class="section" id="contacto">
-      <div class="container contact-grid">
-        <div>
-          <h2>Conversemos</h2>
-          <p class="section-lede">Cuéntanos sobre tu servicio de transporte escolar y te contactamos.</p>
+        <div class="faq-list">
+          <article class="faq-item open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>¿Es seguro compartir la ubicación de mis hijos en la app?</span><span class="chevron"></span>
+            </button>
+            <div class="faq-answer"><p>Rumbo utiliza cifrado SSL de extremo a extremo. Los datos de ubicación son privados y solo accesibles tanto para el padre registrado como para el conductor autorizado.</p></div>
+          </article>
+          <article class="faq-item open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>¿Qué sucede si la movilidad escolar no tiene internet?</span><span class="chevron"></span>
+            </button>
+            <div class="faq-answer"><p>El sistema alerta de inmediato al despachador escolar y al padre cuando la señal de GPS se interrumpe por más de 3 minutos, activando un protocolo de reporte de emergencia.</p></div>
+          </article>
+          <article class="faq-item open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>¿El conductor puede usar la app mientras conduce?</span><span class="chevron"></span>
+            </button>
+            <div class="faq-answer"><p>Absolutamente no. La aplicación móvil del conductor está diseñada para ser de bajo contacto, con comandos de voz y botones gigantes de un toque que solo se presionan en detenciones autorizadas.</p></div>
+          </article>
         </div>
-        <form class="contact-form" id="contactForm" novalidate>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required autocomplete="name">
-
-          <label for="email">Correo</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 
+    <section class="cta-wrap" id="cta">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Empieza a sentirte más tranquilo hoy</h2>
+            <p>Descarga la app en tu teléfono inteligente o contáctanos para integrar a tu colegio.<br />Disponible para iOS y Android de forma gratuita.</p>
+          </div>
+          <a class="btn btn-light" href="#">Descargar para padres</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <span class="brand-word">Rumbo</span>
-        <p>Sigue cada trayecto con tranquilidad.</p>
+        <img src="./assets/logo-alt.png" alt="Rumbo" />
+        <p>Coordinación y seguridad de transporte escolar en tiempo real. Uniendo familias, escuelas y conductores con tecnología confiable.</p>
       </div>
-      <nav class="footer-nav" aria-label="Enlaces del sitio">
-        <a href="#funcionamiento">Cómo funciona</a>
+      <div class="footer-col">
+        <h3>Producto</h3>
         <a href="#beneficios">Beneficios</a>
-        <a href="#funcionalidades">Funcionalidades</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#">Términos y condiciones</a>
-      </nav>
+        <a href="#funcionalidades">Características</a>
+        <a href="#">Planes y Precios</a>
+        <a href="#faq">Seguridad</a>
+      </div>
+      <div class="footer-col">
+        <h3>Compañía</h3>
+        <a href="#">Nosotros</a>
+        <a href="#">Colegios Asociados</a>
+        <a href="#">Blog</a>
+        <a href="#">Prensa</a>
+      </div>
+      <div class="footer-col">
+        <h3>Soporte Legal</h3>
+        <a href="#faq">Ayuda / FAQ</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Contacto</a>
+      </div>
     </div>
-    <p class="footer-legal">© 2026 Rumbo. Todos los derechos reservados.</p>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Rumbo Inc. Todos los derechos reservados. Diseñado para la seguridad escolar.</span>
+      <div class="socials" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="X / Twitter">𝕏</a>
+        <a href="#" aria-label="Instagram">◎</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="./app.js"></script>
 </body>
-
 </html>
