@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
+
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -29,21 +30,20 @@
       <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="#beneficios">Beneficios</a>
         <a href="#funciona">Funcionalidades</a>
-        <a href="#faq">Preguntas frecuentes</a>
         <div class="nav-dropdown">
           <button class="nav-dropdown-toggle" type="button" aria-expanded="false" style="display: flex; align-items: center; gap: 8px;">Recursos
-            <img class="nav-dropdown-toggle" src="./assets/chevron.svg"></button>
+            <img src="./assets/chevron.svg" alt=""></button>
           <div class="nav-dropdown-menu" role="menu">
             <a href="#opiniones" role="menuitem">Opiniones</a>
             <a href="#faq" role="menuitem">Preguntas frecuentes</a>
           </div>
         </div>
-      </nav>
 
-      <div class="nav-actions">
-        <a class="login-link" href="#">Iniciar sesión</a>
-        <a class="btn btn-primary btn-sm" href="#cta">Regístrate</a>
-      </div>
+        <div class="nav-actions">
+          <a class="login-link" href="#">Iniciar sesión</a>
+          <a class="btn btn-primary btn-sm" href="#cta">Regístrate</a>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -179,21 +179,21 @@
         </header>
 
         <div class="faq-list">
-          <article class="faq-item open">
-            <button class="faq-question" type="button" aria-expanded="true">
-              <span>¿Es seguro compartir la ubicación de mis hijos en la app?</span><span class="chevron"></span>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Es seguro compartir la ubicación de mis hijos en la app?</span><span class="chevron"><img src="./assets/chevron.svg" alt=""></span>
             </button>
             <div class="faq-answer"><p>Rumbo utiliza cifrado SSL de extremo a extremo. Los datos de ubicación son privados y solo accesibles tanto para el padre registrado como para el conductor autorizado.</p></div>
           </article>
-          <article class="faq-item open">
-            <button class="faq-question" type="button" aria-expanded="true">
-              <span>¿Qué sucede si la movilidad escolar no tiene internet?</span><span class="chevron"></span>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Qué sucede si la movilidad escolar no tiene internet?</span><span class="chevron"><img src="./assets/chevron.svg" alt=""></span>
             </button>
             <div class="faq-answer"><p>El sistema alerta de inmediato al despachador escolar y al padre cuando la señal de GPS se interrumpe por más de 3 minutos, activando un protocolo de reporte de emergencia.</p></div>
           </article>
-          <article class="faq-item open">
-            <button class="faq-question" type="button" aria-expanded="true">
-              <span>¿El conductor puede usar la app mientras conduce?</span><span class="chevron"></span>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿El conductor puede usar la app mientras conduce?</span><span class="chevron"><img src="./assets/chevron.svg" alt=""></span>
             </button>
             <div class="faq-answer"><p>Absolutamente no. La aplicación móvil del conductor está diseñada para ser de bajo contacto, con comandos de voz y botones gigantes de un toque que solo se presionan en detenciones autorizadas.</p></div>
           </article>
@@ -253,6 +253,6 @@
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
