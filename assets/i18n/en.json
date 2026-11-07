@@ -3,6 +3,8 @@
         "benefits": "Benefits",
         "features": "Features",
         "resources": "Resources",
+        "productVideo": "Product video",
+        "teamVideo": "Team video",
         "opinions": "Reviews",
         "faq": "Frequently Asked Questions",
         "login": "Sign in",
@@ -132,6 +134,16 @@
         "alexandra": {
             "description": "Focused on systems development, applied research and prototyping, with knowledge of Python and C++."
         }
+    },
+    "productVideo": {
+        "title": "See how <span class=\"marker\">Rumbo</span> works",
+        "subtitle": "A short look at the product: what Rumbo does for parents and drivers, and what the people who tried it say.",
+        "frame": "Video: Rumbo product overview"
+    },
+    "teamVideo": {
+        "title": "How we built <span class=\"marker\">Rumbo</span>",
+        "subtitle": "Our work process, real team sessions and each member's account of what they learned.",
+        "frame": "Video: how the Rumbo team worked"
     },
     "faq": {
         "title": "Frequently Asked Questions",
