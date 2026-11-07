@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 
-<html lang="es">
+<html lang="en">
 
 
 
@@ -93,7 +93,7 @@
 
           <div class="language-switcher" aria-label="Selector de idioma">
 
-            <button type="button" class="language-btn active" data-lang="es" aria-label="Cambiar idioma a español">
+            <button type="button" class="language-btn " data-lang="es" aria-label="Cambiar idioma a español">
 
               ES
 
@@ -101,7 +101,7 @@
 
 
 
-            <button type="button" class="language-btn" data-lang="en" aria-label="Change language to English">
+            <button type="button" class="language-btn active" data-lang="en" aria-label="Change language to English">
 
               EN
 
@@ -577,6 +577,33 @@
 
     </section>
     <!-- =========================
+     VIDEO ABOUT-THE-PRODUCT
+     Para usar el video real: reemplaza M7lc1UVf-VE en el src del iframe
+     por el ID del video publicado en YouTube (lo que va después de "v=").
+========================= -->
+    <section class="video-section section-cream" id="video-producto" aria-labelledby="product-video-title">
+      <div class="container">
+
+        <header class="section-heading">
+          <h2 id="product-video-title" data-i18n-html="productVideo.title">Mira cómo funciona <span
+              class="marker">Rumbo</span></h2>
+
+          <p data-i18n="productVideo.subtitle">
+            Un recorrido breve por el producto: qué hace Rumbo por padres y conductores, y lo que opinan quienes lo
+            probaron.
+          </p>
+        </header>
+
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE"
+            aria-label="Video: presentación del producto Rumbo" data-i18n-aria-label="productVideo.frame" loading="lazy"
+            allow="encrypted-media; picture-in-picture" allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+      </div>
+    </section>
+    <!-- =========================
      PLANES Y SUSCRIPCIONES
 ========================= -->
     <section class="plans-section section-cream" id="planes">
@@ -859,7 +886,33 @@
 
       </div>
     </section>
+    <!-- =========================
+     VIDEO ABOUT-THE-TEAM
+     Para usar el video real: reemplaza M7lc1UVf-VE en el src del iframe
+     por el ID del video publicado en YouTube (lo que va después de "v=").
+========================= -->
+    <section class="video-section section-cream" id="video-equipo" aria-labelledby="team-video-title">
+      <div class="container">
 
+        <header class="section-heading">
+          <h2 id="team-video-title" data-i18n-html="teamVideo.title">Cómo construimos <span class="marker">Rumbo</span>
+          </h2>
+
+          <p data-i18n="teamVideo.subtitle">
+            Nuestro proceso de trabajo, sesiones reales del equipo y el testimonio de cada integrante sobre lo que
+            aprendió.
+          </p>
+        </header>
+
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE"
+            aria-label="Video: cómo trabajó el equipo de Rumbo" data-i18n-aria-label="teamVideo.frame" loading="lazy"
+            allow="encrypted-media; picture-in-picture" allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+      </div>
+    </section>
     <section class="faq-section" id="faq">
 
       <div class="container faq-container">
