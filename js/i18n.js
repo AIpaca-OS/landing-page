@@ -1,4 +1,4 @@
-const DEFAULT_LANGUAGE = "es";
+const DEFAULT_LANGUAGE = "en";
 const SUPPORTED_LANGUAGES = ["es", "en"];
 
 let currentLanguage = DEFAULT_LANGUAGE;
