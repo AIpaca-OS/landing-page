@@ -1,0 +1,171 @@
+{
+    "nav": {
+        "benefits": "Benefits",
+        "features": "Features",
+        "resources": "Resources",
+        "opinions": "Reviews",
+        "faq": "Frequently Asked Questions",
+        "login": "Sign in",
+        "register": "Sign up"
+    },
+    "hero": {
+        "title": "Peace of mind on<br>every trip.",
+        "description": "Connect parents and drivers in real time. Monitor stops, receive incident alerts and maintain direct communication throughout the entire school trip.",
+        "download": "Download for parents",
+        "demo": "Try Demo"
+    },
+    "benefits": {
+        "title": "<span class=\"marker\">Benefits</span> designed for complete peace of mind",
+        "subtitle": "Reduce the uncertainty of daily school trips with tools that provide immediate control.",
+        "live": {
+            "title": "Live Monitoring",
+            "description": "View the exact route of your children's school transportation vehicle on an interactive map in real time."
+        },
+        "alerts": {
+            "title": "Instant Alerts",
+            "description": "Receive automatic notifications when transportation is near home, arrives at school or an incident occurs."
+        },
+        "communication": {
+            "title": "Direct Communication",
+            "description": "Integrated communication between drivers and parents without sharing private phone numbers. Keep all reports in one place."
+        }
+    },
+    "steps": {
+        "title": "How does Rumbo work?",
+        "subtitle": "Getting started with school trip monitoring only takes a few minutes.",
+        "pickup": {
+            "title": "Pickup confirmed",
+            "description": "The driver confirms the student's pickup and the family receives the notification instantly."
+        },
+        "route": {
+            "title": "Trip in progress",
+            "description": "A timeline shows the progress of the trip and reports traffic delays or route changes."
+        },
+        "incidents": {
+            "title": "Incidents, if they occur",
+            "description": "Any unexpected event is recorded once and delivered to the people who need to know."
+        },
+        "arrival": {
+            "title": "Arrival confirmed",
+            "description": "When the student arrives at school or home, the arrival is recorded and reported."
+        }
+    },
+    "showcase": {
+        "title": "Discover Rumbo in action",
+        "subtitle": "Explore Rumbo's main tools for keeping families informed and simplifying the management of every school trip.",
+        "tabs": {
+            "panel": "Main dashboard",
+            "trip": "Current trip",
+            "notifications": "Notifications",
+            "routes": "Route management"
+        },
+        "panel": {
+            "title": "Parent dashboard",
+            "description": "All school trip information in one place. Check the active trip, driver, student and most recent events."
+        },
+        "trip": {
+            "title": "Trip tracking",
+            "description": "Follow the progress of the route and review its events throughout the school trip."
+        },
+        "notifications": {
+            "title": "Important notifications",
+            "description": "Stay informed about pickups, delays and relevant incidents from one place."
+        },
+        "routes": {
+            "title": "Route management",
+            "description": "Organize routes, stops, schedules and students easily from the platform."
+        }
+    },
+    "plans": {
+        "title": "Plans for every journey",
+        "subtitle": "Choose the option that best fits the way you use Rumbo.",
+        "available": "Available",
+        "freemium": {
+            "description": "A simple option to start using Rumbo and explore the platform's main tools."
+        },
+        "premium": {
+            "description": "Designed for drivers looking for a more complete experience to organize and review their trip information."
+        },
+        "plus": {
+            "description": "An expanded option for drivers who want to make the most of the tools available in Rumbo."
+        }
+    },
+    "metrics": {
+        "routes": "Safely completed routes",
+        "uptime": "Live GPS service uptime",
+        "savings": "Average daily time saved per route",
+        "associations": "Formal driver associations"
+    },
+    "testimonials": {
+        "title": "What parents and drivers say",
+        "subtitle": "Rumbo is a digital bridge connecting families seeking safety with the people who provide it.",
+        "parent": {
+            "quote": "“With Rumbo, the stressful calls during traffic are over. I know exactly when the school vehicle will pick up Mateo. It is invaluable.”",
+            "role": "Parent"
+        },
+        "driver": {
+            "quote": "“Parents appreciate the transparency. The app lets me record events with a tap and continue driving safely.”",
+            "role": "Associated Driver (Route 4)"
+        },
+        "school": {
+            "quote": "“We implemented Rumbo across our entire school transportation fleet. We reduced front-desk incident inquiries by 40%.”",
+            "name": "Operations Director",
+            "role": "San Ignacio School"
+        }
+    },
+    "team": {
+        "title": "Our team",
+        "subtitle": "Meet the people behind the development of Rumbo.",
+        "career": "Software Engineering",
+        "marcelo": {
+            "description": "Adaptable and collaborative, with the ability to learn quickly and knowledge of JavaScript technologies."
+        },
+        "alejandro": {
+            "description": "Focused on technical development, with experience in Python, C++, React Native and collaborative work using Scrum."
+        },
+        "kevin": {
+            "description": "Focused on software architecture, databases and development with Python and C++, working with agile methodologies."
+        },
+        "leonardo": {
+            "description": "Interested in creating clear and functional technology solutions, with knowledge of C++, Python and academic projects."
+        },
+        "alexandra": {
+            "description": "Focused on systems development, applied research and prototyping, with knowledge of Python and C++."
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Do you have questions about security or how the platform works? Find the answers here.",
+        "q1": "Is it safe to share my children's location in the app?",
+        "a1": "Rumbo uses end-to-end SSL encryption. Location information is private and accessible only to the registered parent and authorized driver.",
+        "q2": "What happens if the school vehicle loses internet access?",
+        "a2": "The system immediately alerts the school dispatcher and parent when the GPS signal is interrupted for more than 3 minutes, activating an emergency reporting protocol.",
+        "q3": "Can the driver use the app while driving?",
+        "a3": "Absolutely not. The driver's application is designed for minimal interaction, with voice commands and large one-touch controls that are only used during authorized stops."
+    },
+    "cta": {
+        "title": "Start feeling more at ease today",
+        "description": "Download the app on your smartphone or contact us to integrate Rumbo with your school.<br>Available for iOS and Android free of charge.",
+        "download": "Download for parents",
+        "demo": "Try Demo"
+    },
+    "footer": {
+        "description": "Real-time school transportation coordination and safety. Connecting families, schools and drivers through reliable technology.",
+        "product": "Product",
+        "benefits": "Benefits",
+        "features": "Features",
+        "plans": "Plans and Pricing",
+        "security": "Security",
+        "company": "Company",
+        "about": "About us",
+        "schools": "Partner Schools",
+        "blog": "Blog",
+        "press": "Press",
+        "legal": "Legal Support",
+        "help": "Help / FAQ",
+        "terms": "Terms of Service",
+        "privacy": "Privacy",
+        "contact": "Contact",
+        "rights": "© 2026 Rumbo Inc. All rights reserved. Designed for school transportation safety."
+    }
+}

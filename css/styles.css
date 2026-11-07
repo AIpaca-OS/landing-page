@@ -1196,4 +1196,439 @@ button:focus-visible {
   .showcase-description p {
     font-size: 14px;
   }
+
+}
+
+/* ===============================
+   LANGUAGE SWITCHER
+================================ */
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid #dfe5e1;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.language-btn {
+  min-width: 38px;
+  padding: 7px 9px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #124c46;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.language-btn:hover {
+  background: #eef7f4;
+}
+
+.language-btn.active {
+  background: #124c46;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    width: fit-content;
+  }
+}
+
+/* ===============================
+   CTA ACTIONS
+================================ */
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-demo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.btn-demo:hover {
+  background: #ffffff;
+  color: #124c46;
+}
+
+@media (max-width: 650px) {
+  .cta-actions {
+    width: 100%;
+  }
+
+  .cta-actions .btn,
+  .cta-actions .btn-demo {
+    flex: 1 1 180px;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   HERO ACTIONS
+================================ */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-hero-demo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+
+  border: 1px solid #124c46;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #124c46;
+
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+.btn-hero-demo:hover {
+  background: #124c46;
+  color: #ffffff;
+}
+
+@media (max-width: 650px) {
+  .hero-actions {
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .hero-actions .btn-hero-demo {
+    text-align: center;
+  }
+}
+
+/* ===============================
+   PLANES Y SUSCRIPCIONES
+================================ */
+
+.plans-section {
+  padding: 90px 0 100px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.plan-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 330px;
+  padding: 30px;
+
+  background: #ffffff;
+  border: 1px solid #eadfbf;
+  border-radius: 18px;
+
+  box-shadow: 0 14px 35px rgba(13, 25, 48, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 45px rgba(13, 25, 48, 0.10);
+}
+
+.plan-card-featured {
+  border-color: #42ad91;
+}
+
+.plan-status {
+  align-self: flex-start;
+
+  margin-bottom: 18px;
+  padding: 7px 13px;
+
+  border-radius: 999px;
+
+  background: #eef5f1;
+  color: #124c46;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.plan-card h3 {
+  margin: 0 0 10px;
+
+  color: #124c46;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.plan-price {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+
+  margin-bottom: 24px;
+
+  color: #0d1930;
+}
+
+.plan-price span {
+  margin-top: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plan-price strong {
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.plan-card p {
+  margin: auto 0 0;
+
+  color: #64706d;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .plan-card {
+    min-height: auto;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .plans-section {
+    padding: 60px 0 70px;
+  }
+
+  .plans-grid {
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .plan-card {
+    padding: 24px;
+  }
+
+  .plan-price strong {
+    font-size: 40px;
+  }
+}
+
+/* ===============================
+   NUESTRO EQUIPO
+================================ */
+
+.team-section {
+  padding: 90px 0 100px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.team-card {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 26px;
+
+  background: #ffffff;
+  border: 1px solid #e7ebe8;
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 14px 35px rgba(13, 25, 48, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(13, 25, 48, 0.10);
+}
+
+/* Centrar los dos últimos integrantes */
+
+.team-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.team-card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.team-photo {
+  width: 92px;
+  height: 92px;
+
+  margin-bottom: 18px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #eef7f4;
+}
+
+.team-card h3 {
+  margin: 0 0 6px;
+
+  color: #0d1930;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.team-career {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: #42ad91;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.team-card p {
+  margin: 0;
+
+  color: #64706d;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card {
+    grid-column: auto;
+  }
+
+  .team-card:nth-child(4),
+  .team-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .team-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 450px;
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .team-section {
+    padding: 60px 0 70px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .team-card,
+  .team-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .team-card {
+    padding: 26px 22px;
+  }
+
+  .team-photo {
+    width: 84px;
+    height: 84px;
+  }
 }
