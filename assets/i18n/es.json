@@ -1,0 +1,171 @@
+{
+    "nav": {
+        "benefits": "Beneficios",
+        "features": "Funcionalidades",
+        "resources": "Recursos",
+        "opinions": "Opiniones",
+        "faq": "Preguntas frecuentes",
+        "login": "Iniciar sesión",
+        "register": "Regístrate"
+    },
+    "hero": {
+        "title": "Tranquilidad en<br>cada trayecto.",
+        "description": "Conecta a padres y conductores en tiempo real. Monitorea paradas, recibe alertas de incidencias y mantén comunicación directa durante todo el traslado escolar.",
+        "download": "Descargar para padres",
+        "demo": "Probar Demo"
+    },
+    "benefits": {
+        "title": "<span class=\"marker\">Beneficios</span> diseñados para tu total tranquilidad",
+        "subtitle": "Reducimos la incertidumbre diaria de los trayectos escolares con herramientas de control inmediatas.",
+        "live": {
+            "title": "Monitoreo en Vivo",
+            "description": "Visualiza el recorrido exacto del vehículo de transporte escolar de tus hijos sobre el mapa interactivo en tiempo real."
+        },
+        "alerts": {
+            "title": "Alertas Inmediatas",
+            "description": "Recibe notificaciones automáticas cuando el transporte esté cerca de casa, al llegar al colegio o ante incidencias."
+        },
+        "communication": {
+            "title": "Comunicación Directa",
+            "description": "Chat integrado entre conductores y padres sin compartir números privados. Centraliza todos los reportes."
+        }
+    },
+    "steps": {
+        "title": "¿Cómo funciona Rumbo?",
+        "subtitle": "Comenzar a monitorear los trayectos escolares toma solo unos minutos.",
+        "pickup": {
+            "title": "Recojo confirmado",
+            "description": "El conductor marca el recojo del estudiante y la familia recibe la confirmación al instante."
+        },
+        "route": {
+            "title": "Ruta en curso",
+            "description": "Un timeline muestra el avance del recorrido y avisa si hay retrasos por tráfico o desvíos."
+        },
+        "incidents": {
+            "title": "Incidencias, si ocurren",
+            "description": "Cualquier eventualidad se registra una sola vez y llega a quien necesita saberlo."
+        },
+        "arrival": {
+            "title": "Llegada confirmada",
+            "description": "Al llegar al colegio o al hogar, la entrega queda registrada y notificada."
+        }
+    },
+    "showcase": {
+        "title": "Conoce Rumbo en acción",
+        "subtitle": "Explora las principales herramientas de Rumbo para mantener informadas a las familias y facilitar la gestión de cada recorrido escolar.",
+        "tabs": {
+            "panel": "Panel principal",
+            "trip": "Viaje actual",
+            "notifications": "Notificaciones",
+            "routes": "Gestión de rutas"
+        },
+        "panel": {
+            "title": "Panel para padres",
+            "description": "Toda la información del trayecto escolar en un solo lugar. Consulta el recorrido activo, conductor, estudiante y los eventos más recientes."
+        },
+        "trip": {
+            "title": "Seguimiento del viaje",
+            "description": "Sigue el progreso del recorrido y consulta sus eventos durante todo el trayecto escolar."
+        },
+        "notifications": {
+            "title": "Notificaciones importantes",
+            "description": "Mantente informado sobre recojos, retrasos e incidencias relevantes desde un solo espacio."
+        },
+        "routes": {
+            "title": "Gestión de rutas",
+            "description": "Organiza recorridos, paradas, horarios y estudiantes de manera sencilla desde la plataforma."
+        }
+    },
+    "plans": {
+        "title": "Planes para cada recorrido",
+        "subtitle": "Elige la opción que mejor se adapte a la forma en que utilizas Rumbo.",
+        "available": "Disponible",
+        "freemium": {
+            "description": "Una opción sencilla para comenzar a utilizar Rumbo y conocer las herramientas principales de la plataforma."
+        },
+        "premium": {
+            "description": "Pensado para conductores que buscan una experiencia más completa para organizar y consultar la información de sus recorridos."
+        },
+        "plus": {
+            "description": "Una alternativa ampliada para conductores que desean aprovechar al máximo las herramientas disponibles en Rumbo."
+        }
+    },
+    "metrics": {
+        "routes": "Rutas completadas de forma segura",
+        "uptime": "Uptime del servicio de GPS en vivo",
+        "savings": "Ahorro promedio diario por ruta",
+        "associations": "Asociaciones de conductores formales"
+    },
+    "testimonials": {
+        "title": "Lo que opinan padres y conductores",
+        "subtitle": "Rumbo es un puente digital que une a quienes buscan seguridad con quienes la brindan con esmero.",
+        "parent": {
+            "quote": "“Con Rumbo se acabaron las llamadas de desesperación en el tráfico. Sé exactamente cuándo la movilidad pasará por Mateo. Es invaluable.”",
+            "role": "Madre de Familia"
+        },
+        "driver": {
+            "quote": "“Los padres aprecian la transparencia. La app me permite registrar eventos en un tap y continuar manejando seguro.”",
+            "role": "Conductor Asociado (Ruta 4)"
+        },
+        "school": {
+            "quote": "“Implementamos Rumbo en toda nuestra flota de movilidad. Redujimos un 40% las consultas de incidencias en recepción.”",
+            "name": "Director de Operaciones",
+            "role": "Colegio San Ignacio"
+        }
+    },
+    "team": {
+        "title": "Nuestro equipo",
+        "subtitle": "Conoce a las personas detrás del desarrollo de Rumbo.",
+        "career": "Ingeniería de Software",
+        "marcelo": {
+            "description": "Adaptable y colaborativo, con facilidad para aprender rápidamente y conocimientos en tecnologías JavaScript."
+        },
+        "alejandro": {
+            "description": "Orientado al desarrollo técnico, con experiencia en Python, C++, React Native y trabajo colaborativo con Scrum."
+        },
+        "kevin": {
+            "description": "Enfocado en arquitectura de software, bases de datos y desarrollo con Python y C++, trabajando bajo metodologías ágiles."
+        },
+        "leonardo": {
+            "description": "Interesado en crear soluciones tecnológicas claras y funcionales, con conocimientos en C++, Python y proyectos académicos."
+        },
+        "alexandra": {
+            "description": "Enfocada en desarrollo de sistemas, investigación aplicada y prototipado, con conocimientos en Python y C++."
+        }
+    },
+    "faq": {
+        "title": "Preguntas Frecuentes",
+        "subtitle": "¿Tienes dudas sobre la seguridad o el funcionamiento técnico? Aquí las aclaramos.",
+        "q1": "¿Es seguro compartir la ubicación de mis hijos en la app?",
+        "a1": "Rumbo utiliza cifrado SSL de extremo a extremo. Los datos de ubicación son privados y solo accesibles tanto para el padre registrado como para el conductor autorizado.",
+        "q2": "¿Qué sucede si la movilidad escolar no tiene internet?",
+        "a2": "El sistema alerta de inmediato al despachador escolar y al padre cuando la señal de GPS se interrumpe por más de 3 minutos, activando un protocolo de reporte de emergencia.",
+        "q3": "¿El conductor puede usar la app mientras conduce?",
+        "a3": "Absolutamente no. La aplicación móvil del conductor está diseñada para ser de bajo contacto, con comandos de voz y botones gigantes de un toque que solo se presionan en detenciones autorizadas."
+    },
+    "cta": {
+        "title": "Empieza a sentirte más tranquilo hoy",
+        "description": "Descarga la app en tu teléfono inteligente o contáctanos para integrar a tu colegio.<br>Disponible para iOS y Android de forma gratuita.",
+        "download": "Descargar para padres",
+        "demo": "Probar Demo"
+    },
+    "footer": {
+        "description": "Coordinación y seguridad de transporte escolar en tiempo real. Uniendo familias, escuelas y conductores con tecnología confiable.",
+        "product": "Producto",
+        "benefits": "Beneficios",
+        "features": "Características",
+        "plans": "Planes y Precios",
+        "security": "Seguridad",
+        "company": "Compañía",
+        "about": "Nosotros",
+        "schools": "Colegios Asociados",
+        "blog": "Blog",
+        "press": "Prensa",
+        "legal": "Soporte Legal",
+        "help": "Ayuda / FAQ",
+        "terms": "Términos de Servicio",
+        "privacy": "Privacidad",
+        "contact": "Contacto",
+        "rights": "© 2026 Rumbo Inc. Todos los derechos reservados. Diseñado para la seguridad escolar."
+    }
+}
