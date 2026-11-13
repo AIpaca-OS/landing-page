@@ -119,9 +119,6 @@
         "title": "Nuestro equipo",
         "subtitle": "Conoce a las personas detrás del desarrollo de Rumbo.",
         "career": "Ingeniería de Software",
-        "marcelo": {
-            "description": "Adaptable y colaborativo, con facilidad para aprender rápidamente y conocimientos en tecnologías JavaScript."
-        },
         "alejandro": {
             "description": "Orientado al desarrollo técnico, con experiencia en Python, C++, React Native y trabajo colaborativo con Scrum."
         },

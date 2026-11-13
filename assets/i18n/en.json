@@ -119,9 +119,6 @@
         "title": "Our team",
         "subtitle": "Meet the people behind the development of Rumbo.",
         "career": "Software Engineering",
-        "marcelo": {
-            "description": "Adaptable and collaborative, with the ability to learn quickly and knowledge of JavaScript technologies."
-        },
         "alejandro": {
             "description": "Focused on technical development, with experience in Python, C++, React Native and collaborative work using Scrum."
         },
